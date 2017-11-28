@@ -168,8 +168,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DocumentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TrainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,7 +236,17 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\EditTrainInformation.cshtml" />
+    <Content Include="Views\Train\ViewTrainInformation.cshtml" />
+    <Content Include="Views\Train\EditTrainInformation.cshtml" />
+    <Content Include="Views\Train\ViewTrainDetails.cshtml" />
+    <Content Include="Views\Train\TrainDetailsSearch.cshtml" />
+    <Content Include="Views\Documents\GeneralOrder.cshtml" />
+    <Content Include="Views\Documents\OperationNotice.cshtml" />
+    <Content Include="Views\Documents\GeneralNoticeNumber.cshtml" />
+    <Content Include="Views\Documents\SpecialSchedule.cshtml" />
+    <Content Include="Views\Documents\CrewManagementSystemBook.cshtml" />
+    <Content Include="Views\Documents\Bulletin.cshtml" />
+    <Content Include="Views\Documents\CrewAssignment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
