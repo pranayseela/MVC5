@@ -168,9 +168,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ComputerInformationController.cs" />
     <Compile Include="Controllers\DocumentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\TrainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -247,6 +249,13 @@
     <Content Include="Views\Documents\CrewManagementSystemBook.cshtml" />
     <Content Include="Views\Documents\Bulletin.cshtml" />
     <Content Include="Views\Documents\CrewAssignment.cshtml" />
+    <Content Include="Views\ComputerInformation\ViewComputerInformation.cshtml" />
+    <Content Include="Views\ComputerInformation\ViewLocationDetails.cshtml" />
+    <Content Include="Views\Reports\DailyReport.cshtml" />
+    <Content Include="Views\Reports\WeeklyReport.cshtml" />
+    <Content Include="Views\Reports\LocationWiseReport.cshtml" />
+    <Content Include="Views\Reports\EmployeeWiseReport.cshtml" />
+    <Content Include="Views\Reports\CustomReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
