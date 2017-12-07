@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ComputerInformationController.cs" />
+    <Compile Include="Controllers\DisclaimerController.cs" />
     <Compile Include="Controllers\DocumentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -256,6 +257,7 @@
     <Content Include="Views\Reports\LocationWiseReport.cshtml" />
     <Content Include="Views\Reports\EmployeeWiseReport.cshtml" />
     <Content Include="Views\Reports\CustomReport.cshtml" />
+    <Content Include="Views\Disclaimer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

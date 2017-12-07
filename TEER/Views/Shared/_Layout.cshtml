@@ -19,12 +19,10 @@
                 </button>
                 @Html.ActionLink("TEER", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-
-
-
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" style="font-weight:bold;">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Disclaimer", "Index", "Disclaimer")</li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Train Information<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -62,18 +60,7 @@
                             <li>@Html.ActionLink("Custom Report", "CustomReport", "Reports")</li>
                         </ul>
                     </li>
-                    @*<li>@Html.ActionLink("Main 3", "Index", "Doctors")</li>
-                    <li>@Html.ActionLink("Main 4", "Index", "Home")</li>*@
                 </ul>
-                @*<ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Train Info", "TrainInfo", "Home")</li>
-                    <li>@Html.ActionLink("Documents", "Documents", "Home")</li>
-                    <li>@Html.ActionLink("Computer Information", "ComputerInformation", "Home")</li>
-                    <li>@Html.ActionLink("Reports", "Reports", "Home")</li>
-                </ul>*@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>

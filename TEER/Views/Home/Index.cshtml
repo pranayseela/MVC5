@@ -1,6 +1,19 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Index";
 }
+<script language="javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script language="javascript" type="text/javascript">
+        function AcceptTermAndcondition() {
+
+            if ($("#chkcondition").is(':checked')) {
+                return true;
+            }
+            else {
+                alert("Please accept term and condition");
+                return false;
+            }
+        }
+</script>
 
 <div class="jumbotron">
     <h1>TEER</h1>
@@ -9,15 +22,26 @@
 </div>
 
 <div class="row">
-    <div class="col-md-6">
+
+    <div class="col-md-12">
+
+        <div class="col-md-6">
         <h2>e-Register</h2>
         <p>Click below to login into the TEER Application.</p>
-        <p class="btn btn-default">@Html.ActionLink("Sign in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</p>
-    </div>
-    <div class="col-md-6">
-        <h2>e-HOS</h2>
-        <p>Click below to login into the eHOS Application.</p>
-        <p class="btn btn-default" >@Html.ActionLink("Sign in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</p>
-        
+        @*<p class="btn btn-default">@Html.ActionLink("Sign in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</p>*@
+            <p class="btn btn-default">@Html.ActionLink("Sign in", "Index", "Disclaimer")</p>
+        <br />
+        <br />
+        </div>
+
+        <div class="col-md-6">
+            <h2>e-HOS</h2>
+            <p>Click below to login into the e-HOS Application.</p>
+            <p class="btn btn-default">@Html.ActionLink("Sign in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</p>
+            <br />
+            <br />
+        </div>
+
+
     </div>
 </div>
