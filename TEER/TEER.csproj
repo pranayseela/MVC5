@@ -173,6 +173,7 @@
     <Compile Include="Controllers\DocumentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\TrainController.cs" />
     <Compile Include="Global.asax.cs">
@@ -258,6 +259,7 @@
     <Content Include="Views\Reports\EmployeeWiseReport.cshtml" />
     <Content Include="Views\Reports\CustomReport.cshtml" />
     <Content Include="Views\Disclaimer\Index.cshtml" />
+    <Content Include="Views\Register\RegisterSheet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

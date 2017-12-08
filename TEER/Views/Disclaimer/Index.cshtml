@@ -7,7 +7,7 @@
     function AcceptTermAndcondition() {
 
         if ($("#chkcondition").is(':checked')) {
-            return true;
+           
         }
         else {
             alert("Please accept term and condition");
@@ -21,7 +21,7 @@
         @using (Html.BeginForm("", ""))
         {
             <div>
-                @Html.TextArea("Termandcondition", "By Logging in and certifying my T&E Record, I Understand that i am not knowingly and/or willfully falsifying a required record. I understand that if an T&E Record is not present, it is my responsibility to add it to ensure my HOS is properly recorded.", new { @style= "height:100px; width:100%;", @id = "txtcondition" })
+                @Html.TextArea("Termandcondition", "By Logging in and certifying my T&E Record, I Understand that I am not knowingly and/or willfully falsifying a required record. I understand that if an T&E Record is not present, it is my responsibility to add it to ensure my HOS is properly recorded.", new { @style= "height:100px; width:100%;", @id = "txtcondition" })
             </div>@Html.CheckBox("Condition", false, new { @id = "chkcondition" })<a href="#">Accept</a>
             <br />
             <br />
