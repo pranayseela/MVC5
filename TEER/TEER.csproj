@@ -253,7 +253,6 @@
     <Content Include="Views\Documents\Bulletin.cshtml" />
     <Content Include="Views\Documents\CrewAssignment.cshtml" />
     <Content Include="Views\ComputerInformation\ViewComputerInformation.cshtml" />
-    <Content Include="Views\ComputerInformation\ViewLocationDetails.cshtml" />
     <Content Include="Views\Reports\DailyReport.cshtml" />
     <Content Include="Views\Reports\WeeklyReport.cshtml" />
     <Content Include="Views\Reports\LocationWiseReport.cshtml" />

@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Web.Mvc;
 using System.Management;
+using System.Net;
+using System.Net.Sockets;
 
 namespace TEER.Controllers
 {
     public class ComputerInformationController : Controller
     {
         // GET: ComputerInformation
-        public ActionResult Index()
-        {
-            return View();
-        }
+        //public ActionResult Index()
+        //{
+        //    return View();
+        //}
 
         public ActionResult ViewComputerInformation()
         {
@@ -35,17 +37,11 @@ namespace TEER.Controllers
             ViewBag.GetBIOSserNo = GetBIOSserNo();
             ViewBag.GetBIOSmaker = GetBIOSmaker();
             ViewBag.GetCdRomDrive = GetCdRomDrive();
+            ViewBag.ipAddress = GetLocalIPAddress();
 
 
             return View();
         }
-
-        public ActionResult ViewLocationDetails()
-        {
-            ViewBag.Message = " Your View Location Details Page.";
-            return View();
-        }
-
 
         /// <summary>
         /// Retrieving Processor Id.
@@ -488,6 +484,21 @@ namespace TEER.Controllers
             }
             return info;
         }
-        
+        /// <summary>
+        /// Retrieving IP Address.
+        /// </summary>
+        /// <returns></returns>
+        public static string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
+        }
     }
 }

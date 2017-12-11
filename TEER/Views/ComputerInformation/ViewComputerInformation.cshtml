@@ -3,9 +3,36 @@
     ViewBag.Title = "ViewComputerInformation";
 }
 
-<h2>Computer Information</h2>
+<h2 style="text-align:center;">Computer Information</h2>
 
-<table style="width:75%">
+<style>
+    table {
+        width: 83%;
+        border-collapse: collapse;
+        margin: 50px auto;
+    }
+    /* Zebra striping */
+    tr:nth-of-type(odd) {
+        background: #eee;
+    }
+
+    th {
+        background: #3498db;
+        color: white;
+        font-weight: bold;
+    }
+
+    td, th {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: left;
+        font-size: 18px;
+    }
+</style>
+
+
+
+<table >
     <tr>
         <th>Property Name</th>
         <th>Value</th>
@@ -89,6 +116,10 @@
     <tr>
         <td>CD Rom Drive: </td>
         <td>@ViewBag.GetCdRomDrive</td>
+    </tr>
+    <tr>
+        <td>IP Address: </td>
+        <td>@ViewBag.ipAddress</td>
     </tr>
     
 </table>
