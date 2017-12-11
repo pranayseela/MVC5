@@ -28,20 +28,47 @@ ViewBag.Title = "Register Sheet";
     <h2 style="text-align:center; margin-bottom:10px;margin-top:0px; ">Register Sheet</h2>
 </div>
 <div class="row">
-    <div class="col-md-12">
-        <div class="col-md-3">
-            <h4>MTA Metro-North Railroad</h4>
-            <h4>Transportation Department</h4>
-            <h4>Employee Register Sheet</h4>
-        </div>
-        <div class="col-md-3">
-            <h4>Location: @ViewBag.ipAddress</h4>
-            <h4>Day/Date: @DateTime.Now.ToString("MM-dd-yyyy")</h4>
-        </div>
-        <div class="col-md-3">
-            <img src="~/Content/logo.PNG" style=""/>
-        </div>
-    </div>
+    
+    <table>
+        <tr style="background-color:transparent;">
+            <td>MTA Metro-North Railroad</td>
+            <td>Location: @ViewBag.ipAddress</td>
+            <td rowspan="3"><img src="~/Content/logo.PNG" style="" /></td>
+        </tr>
+        <tr style="background-color:transparent;">
+            <td>Transportation Department</td>
+            <td>Day/Date: @DateTime.Now.ToString("MM-dd-yyyy")</td>
+        </tr>
+        <tr style="background-color:transparent;">
+            <td>Employee Register Sheet</td>
+            <td></td>
+        </tr>
+    </table>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        @*<div class="col-md-12">
+            <div class="col-md-3">
+                <h4>MTA Metro-North Railroad</h4>
+                <h4>Transportation Department</h4>
+                <h4>Employee Register Sheet</h4>
+            </div>
+            <div class="col-md-3">
+                <h4>Location: @ViewBag.ipAddress</h4>
+                <h4>Day/Date: @DateTime.Now.ToString("MM-dd-yyyy")</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="~/Content/logo.PNG" style=""/>
+            </div>
+        </div>*@
 </div>
 <hr style="margin:10px; color:black;" />
 
