@@ -1,29 +1,108 @@
 ﻿
 @{
-    ViewBag.Title = "Register Sheet";
+ViewBag.Title = "Register Sheet";
 }
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 30px auto;
+    }
+    tr:nth-of-type(odd) {
+        background: #eee;
+    }
+    th {
+        background: #3498db ;
+        color: white;
+        font-weight: bold;
+    }
+    td, th {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align:center;
+        font-size: 18px;
+    }
+</style>
 
-<div class="row" style="background-color:lightgreen;">
-    <h2 style="text-align:left; margin-bottom:0px;margin-top:0px; margin-left:5px;">Register Sheet</h2>
-</div>
 <div class="row" style="background-color:lightblue;">
+    <h2 style="text-align:center; margin-bottom:10px;margin-top:0px; ">Register Sheet</h2>
+</div>
+<div class="row">
     <div class="col-md-12">
-        <div class="col-md-6">
-            <h3>MTA Metro-North Railroad</h3>
-            <h3>Transportation Department</h3>
-            <h3>Employee Register Sheet</h3>
+        <div class="col-md-3">
+            <h4>MTA Metro-North Railroad</h4>
+            <h4>Transportation Department</h4>
+            <h4>Employee Register Sheet</h4>
         </div>
-        <div class="col-md-6">
-            <h3>Location : @ViewBag.ipAddress</h3>
-            <h3>Day/Date : @DateTime.Now.ToString()</h3>
+        <div class="col-md-3">
+            <h4>Location: @ViewBag.ipAddress</h4>
+            <h4>Day/Date: @DateTime.Now.ToString("MM-dd-yyyy")</h4>
+        </div>
+        <div class="col-md-3">
+            <img src="~/Content/logo.PNG" style=""/>
         </div>
     </div>
 </div>
-<hr />
+<hr style="margin:10px; color:black;" />
 
 <div class="row">
         <div class="col-md-12">
             <br />
-        <p style="font-size:18px;">The undersigned hereby certifies that (s)he has been off duty as required by the Rule "F" and is in fit condition for duty. The undersigned Conductors, Trainmen, Engineers and Track Car Drivers further certify they have received and read the Daily Train Operations Bulletin Order and received and read all General Orders, Bulletin Orders, General Notices and Operations Notice listed on the top of the Daily Train Operations Bulletin Order and thoroughly understand those for the terretory over which qualified.</p>
+        <p style="border: 1px solid green; font-size:19px; text-align:center; font-style:italic;">The undersigned hereby certifies that (s)he has been off duty as required by the Rule "F" and is in fit condition for duty. The undersigned Conductors, Trainmen, Engineers and Track Car Drivers further certify they have received and read the Daily Train Operations Bulletin Order and received and read all General Orders, Bulletin Orders, General Notices and Operations Notice listed on the top of the Daily Train Operations Bulletin Order and thoroughly understand those for the terretory over which qualified.</p>
     </div>
+</div>
+
+<div class="row">
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Run/Job</th>
+            <th>Train</th>
+            <th>Time <br />Ordered To <br />Report</th>
+            <th>Time <br />Registered</th>
+            <th>Qualified for<br />Train Assign.<br /> (Yes/No)</th>
+            <th>Empl. #</th>
+            <th>Employee Signature</th>
+        </tr>
+        <tr>
+            <td>@DateTime.Now.ToString("MM-dd-yyyy")</td>
+            <td>3256</td>
+            <td>Train - 7</td>
+            <td>@DateTime.Now.ToString("hh:mm:ss")</td>
+            <td>@DateTime.Now.ToString("hh:mm:ss")</td>
+            <td>YES</td>
+            <td>1234567</td>
+            <td>Signature</td>
+        </tr>
+        <tr>
+            <td>@DateTime.Now.ToString("MM-dd-yyyy")</td>
+            <td>3256</td>
+            <td>Train - 7</td>
+            <td>@DateTime.Now.ToString("hh:mm:ss")</td>
+            <td>@DateTime.Now.ToString("hh:mm:ss")</td>
+            <td>YES</td>
+            <td>1234567</td>
+            <td>Signature</td>
+        </tr>
+        <tr>
+            <td>@DateTime.Now.ToString("MM-dd-yyyy")</td>
+            <td>3256</td>
+            <td>Train - 7</td>
+            <td>@DateTime.Now.ToString("hh:mm:ss")</td>
+            <td>@DateTime.Now.ToString("hh:mm:ss")</td>
+            <td>NO</td>
+            <td>1234567</td>
+            <td>Signature</td>
+        </tr>
+        <tr>
+            <td>@DateTime.Now.ToString("MM-dd-yyyy")</td>
+            <td>3256</td>
+            <td>Train - 7</td>
+            <td>@DateTime.Now.ToString("hh:mm:ss")</td>
+            <td>@DateTime.Now.ToString("hh:mm:ss")</td>
+            <td>NO</td>
+            <td>1234567</td>
+            <td>Signature</td>
+        </tr>
+    </table>
 </div>

@@ -40,8 +40,6 @@ namespace TEER.Controllers
             //ViewBag.GetBIOSmaker = GetBIOSmaker();
             //ViewBag.GetCdRomDrive = GetCdRomDrive();
             
-
-
             return View();
         }
 
